@@ -6,6 +6,9 @@ import (
 
 func main() {
 	fmt.Println("Hello, World!")
+	fmt.Println(GetHTTPStatusCategory(200)) // Output: Success
+	fmt.Println(GetHTTPStatusCategory(404)) // Output: Client Error
+	fmt.Println(GetHTTPStatusCategory(500)) // Output: Server Error
 }
 
 func GetHTTPStatusCategory(s int) string {
